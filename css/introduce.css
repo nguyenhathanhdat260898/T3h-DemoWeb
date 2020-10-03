@@ -1,0 +1,31 @@
+.heading__introduce{
+  margin: 20px 0;
+  font-weight: 600 ;
+  font-size: 1.2rem;
+}
+
+.text__introduce{
+  margin-bottom: 20px ;
+}
+
+.introduce__meet{
+  margin: 65px  0 50px 0;
+}
+
+.introduce__content-img-and-text{
+  margin: 30px 0;
+}
+
+.introduce__wrap-img{
+  width: 50%;
+  background-color: #f8f8f8;
+}
+
+.introduce__content-img{
+  padding: 15px;
+}
+
+.introduce__content-text{
+  padding: 0 40px;
+  width: 50%;
+}

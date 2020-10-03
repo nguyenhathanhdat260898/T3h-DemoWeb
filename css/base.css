@@ -1,0 +1,30 @@
+:root{
+  --primary-color: #FF4E00;
+}
+
+.footer__text{
+  display: flex;
+  justify-content: center;
+  text-align: center ;
+}
+
+.fixed-top{
+  position: absolute !important;
+} 
+
+.btn__login{
+  border: none;
+}
+
+.footer__bootom{
+  color: #111010
+}
+
+.footer__bootom:hover{
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.footer__wrap{
+  border-color: #fafafa;
+}

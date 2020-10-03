@@ -1,0 +1,43 @@
+body{
+background-color: #faf4f4;
+}
+.card_number {
+  background-color: var(--primary-color);
+  position: absolute;
+  top: -5px;
+  left: 10px;
+  border-radius: 50%;
+  font-size: 0.7em;
+  width: 15px;
+  height: 15px;
+  line-height: 15px;
+  text-align: center;
+}
+
+.my-card {
+  color: white;
+  margin-right: 20px;
+  position: relative;
+}
+
+
+.about__lable{
+  font-weight: bold;
+  font-size: .9rem;
+}
+
+.about__lable{
+  margin: 10px;
+  background-color: red;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #dddddd;
+}
+.footer__bootom{
+  color: #111010
+} 
+
+.footer__bootom:hover{
+  text-decoration: none;
+  color: var(--primary-color);
+}

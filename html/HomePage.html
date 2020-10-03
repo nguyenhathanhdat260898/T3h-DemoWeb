@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HomePage</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/homePage.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="../js/main.js"></script>
+</head>
+
+
+
+<body>
+  <header>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+      <div class="container">
+        <a class="navbar-brand " style="color: var(--primary-color);"
+          href="../html/HomePage.html"><strong>MF</strong></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7"
+          aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link " href="../html/HomePage.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Contact</a>
+
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../html/aboutPage.html">About</a>
+            </li>
+          </ul>
+          <div class="my-card" data-toggle="modal" data-target="#exampleModal">
+            <div class="card_number">0</div>
+            <span>
+              <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z">
+                </path>
+              </svg>
+            </span>
+          </div>
+          <form class="form-inline">
+            <div class="md-form my-0">
+              <input class="form-control mr-sm-2" id="search" type="text" placeholder="Search" aria-label="Search">
+            </div>
+          </form>
+          <a href="./LoginPage.html"><button class="btn btn-primary" type="button">Login</button></a>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar -->
+    <!-- Full Page Intro -->
+    <div class="view"
+      style="background-image: url('https://mdbootstrap.com/img/Photos/Others/img%20%2848%29.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+      <!-- Mask & flexbox options-->
+      <div class="mask rgba-black-light align-items-center">
+        <!-- Content -->
+        <div class="container">
+          <!--Grid row-->
+          <div class="row">
+            <!--Grid column-->
+            <div class="col-md-12 mb-4 white-text text-center">
+              <h1
+                class="h1-reponsive white-text text-uppercase font-weight-bold mb-0 pt-md-5 pt-5 wow fadeInDown text-light"
+                data-wow-delay="0.3s"><strong>MY FASHION</strong></h1>
+              <hr class="hr-light my-4 wow fadeInDown" data-wow-delay="0.4s">
+              <h5 class="text-uppercase mb-4 white-text wow fadeInDown  text-light" data-wow-delay="0.4s">
+                <strong>Stylish & trendy
+                </strong></h5>
+              <a class="btn btn-outline-white wow fadeInDown  text-light" data-wow-delay="0.4s" href="">Contact</a>
+              <a class="btn btn-outline-white wow fadeInDown  text-light" data-wow-delay="0.4s"
+                href="../html/aboutPage.html">About me</a>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </div>
+        <!-- Content -->
+      </div>
+      <!-- Mask & flexbox options-->
+    </div>
+    <!-- Full Page Intro -->
+  </header>
+  <!-- Main navigation -->
+  <!--Main Layout-->
+  <main>
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <select class="form-control form-control-sm order">
+            <option value="0">Order By</option>
+            <option value="1">Decrease</option>
+            <option value="2">Increase</option>
+          </select>
+        </ol>
+
+      </nav>
+
+      <div class="row mb-3 mt-3" id="products">
+        <div class="col-sm-3 mb-3 product">
+          <div class="card">
+            <img class="card-img-top"
+              src="https://product.hstatic.net/1000133495/product/191224-lb-045_f47dd7bdd82243a79ef75822e8e4c3a3_large.jpg"
+              alt="Card image" style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title">Quần Jean Nam</h4>
+              <i>MS 91</i>
+              <p class="card-text">
+                <i class="sale-off">$50</i> -> <i>$25</i>
+              </p>
+              <p>Description</p>
+              <div class="row">
+                <a href="#" class="btn btn-primary buy">Buy</a>
+                <input type="text" name="quantity" value="1" class="col-md-3 offset-md-2">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-3 mb-3 product">
+          <div class="card">
+            <img class="card-img-top"
+              src="https://product.hstatic.net/1000133495/product/200107-lb-174_bf488c9ebc0b4f889b1ed0e6b142a623_large.jpg"
+              alt="Card image" style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title">Quần Jean Nam</h4>
+              <i>MS 90</i>
+              <p class="card-text">
+                <i class="sale-off">$50</i> -> <i>$26</i> </p>
+              <p>Description</p>
+
+              <div class="row">
+                <a href="#" class="btn btn-primary buy">Buy</a>
+                <input type="text" name="quantity" value="1" class="col-md-3 offset-md-2">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-3 mb-3 product">
+          <div class="card">
+            <img class="card-img-top"
+              src="https://product.hstatic.net/1000133495/product/200107-lb-162_62212e6a44a94349aae61a5bc60855e4_large.jpg"
+              alt="Card image" style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title">Quần Jean Nam</h4>
+              <i>MS 92</i>
+              <p class="card-text">
+                <i class="sale-off">$50</i> -> <i>$27</i> </p>
+              </p>
+              <p>Description</p>
+
+              <div class="row">
+                <a href="#" class="btn btn-primary buy">Buy</a>
+                <input type="text" name="quantity" value="1" class="col-md-3 offset-md-2">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-3 mb-3 product">
+          <div class="card">
+            <img class="card-img-top"
+              src="https://product.hstatic.net/1000133495/product/200107-lb-085_916fcfc26157405c9537bfcf7d4ec37e_large.jpg"
+              alt="Card image" style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title">Quần Jean Nam</h4>
+              <i>MS 93</i>
+              <p class="card-text">
+                <i class="sale-off">$50</i> -> <i>$28</i> </p>
+              </p>
+              <p>Description</p>
+
+              <div class="row">
+                <a href="#" class="btn btn-primary buy">Buy</a>
+                <input type="text" name="quantity" value="1" class="col-md-3 offset-md-2">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-3 mb-3 product">
+          <div class="card">
+            <img class="card-img-top"
+              src="https://product.hstatic.net/1000133495/product/1_ea8bbef5bd0f4f68828a2066d645986c_large.jpg"
+              alt="Card image" style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title">Áo sơ mi tay dài</h4>
+              <i>MS 94</i>
+              <p class="card-text">
+                <i class="sale-off">$50</i> -> <i>$29</i> </p>
+              </p>
+              <p>Description</p>
+
+              <div class="row">
+                <a href="#" class="btn btn-primary buy">Buy</a>
+                <input type="text" name="quantity" value="1" class="col-md-3 offset-md-2">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-3 mb-3 product">
+          <div class="card">
+            <img class="card-img-top"
+              src="https://product.hstatic.net/1000133495/product/1_c0a05b6fb83a4059a04cf2d575774f92_large.jpg"
+              alt="Card image" style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title">Áo sơ mi đen tay dài</h4>
+              <i>MS 95</i>
+              <p class="card-text">
+                <i class="sale-off">$50</i> -> <i>$30</i> </p>
+              </p>
+              <p>Description</p>
+
+              <div class="row">
+                <a href="#" class="btn btn-primary buy">Buy</a>
+                <input type="text" name="quantity" value="1" class="col-md-3 offset-md-2">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-3 mb-3 product">
+          <div class="card">
+            <img class="card-img-top"
+              src="https://product.hstatic.net/1000133495/product/1_c6bca8f09821491280283a1dfc6c4d78_large.jpg"
+              alt="Card image" style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title">Áo sơ mi trơn tay dài</h4>
+              <i>MS 96</i>
+              <p class="card-text">
+                <i class="sale-off">$50</i> -> <i>$31</i> </p>
+              </p>
+              <p>Description</p>
+
+              <div class="row">
+                <a href="#" class="btn btn-primary buy">Buy</a>
+                <input type="text" name="quantity" value="1" class="col-md-3 offset-md-2">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-3 mb-3 product">
+          <div class="card">
+            <img class="card-img-top"
+              src="https://product.hstatic.net/1000133495/product/1_2bca125f7b5545abbca72336bcc83406_large.jpg"
+              alt="Card image" style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title">Áo sơ mi caro nam tay dài</h4>
+              <i>MS 97</i>
+              <p class="card-text">
+                <i class="sale-off">$50</i> -> <i>$32</i> </p>
+              </p>
+              <p>Description</p>
+
+              <div class="row">
+                <a href="#" class="btn btn-primary buy">Buy</a>
+                <input type="text" name="quantity" value="1" class="col-md-3 offset-md-2">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 mb-3 product">
+          <div class="card">
+            <img class="card-img-top"
+              src="https://product.hstatic.net/1000133495/product/img-5b0109801372bb29431be9e99a19bd1e-v_large.jpg"
+              alt="Card image" style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title">Áo khoác nam</h4>
+              <i>MS 98</i>
+              <p class="card-text">
+                <i class="sale-off">$50</i> -> <i>$32</i> </p>
+              </p>
+              <p>Description</p>
+
+              <div class="row">
+                <a href="#" class="btn btn-primary buy">Buy</a>
+                <input type="text" name="quantity" value="1" class="col-md-3 offset-md-2">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-3 mb-3 product">
+          <div class="card">
+            <img class="card-img-top"
+              src="https://product.hstatic.net/1000133495/product/o1cn011mxuwhxy3kzgtsu___133241501_83c573e9836b474682bcdf69eaad834f_large.jpg"
+              alt="Card image" style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title">Áo khoác nam</h4>
+              <i>MS 99</i>
+              <p class="card-text">
+                <i class="sale-off">$50</i> -> <i>$33</i> </p>
+              </p>
+              <p>Description</p>
+
+              <div class="row">
+                <a href="#" class="btn btn-primary buy">Buy</a>
+                <input type="text" name="quantity" value="1" class="col-md-3 offset-md-2">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-3 mb-3 product">
+          <div class="card">
+            <img class="card-img-top"
+              src="https://product.hstatic.net/1000133495/product/o1cn011mxuwg7jssnjxlr___133241501_large.jpg"
+              alt="Card image" style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title">Áo khoác nam</h4>
+              <i>MS 100</i>
+              <p class="card-text">
+                <i class="sale-off">$50</i> -> <i>$34</i> </p>
+              </p>
+              <p>Description</p>
+
+              <div class="row">
+                <a href="#" class="btn btn-primary buy">Buy</a>
+                <input type="text" name="quantity" value="1" class="col-md-3 offset-md-2">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-3 mb-3 product">
+          <div class="card">
+            <img class="card-img-top"
+              src="https://product.hstatic.net/1000133495/product/o1cn011mxuwbtebktwirt___133241501_large.jpg"
+              alt="Card image" style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title">Áo khoác nam</h4>
+              <i>MS 101</i>
+              <p class="card-text">
+                <i class="sale-off">$50</i> -> <i>$35</i> </p>
+              </p>
+              <p>Description</p>
+
+              <div class="row">
+                <a href="#" class="btn btn-primary buy">Buy</a>
+                <input type="text" name="quantity" value="1" class="col-md-3 offset-md-2">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-3 mb-3 product">
+          <div class="card">
+            <img class="card-img-top"
+              src="https://product.hstatic.net/1000133495/product/up_web_3_4deff9aa03e940fba4ecdc593ba82192_large.jpg"
+              alt="Card image" style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title">Thắt lưng nam</h4>
+              <i>MS 102</i>
+              <p class="card-text">
+                <i class="sale-off">$50</i> -> <i>$36</i> </p>
+              </p>
+              <p>Description</p>
+
+              <div class="row">
+                <a href="#" class="btn btn-primary buy">Buy</a>
+                <input type="text" name="quantity" value="1" class="col-md-3 offset-md-2">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 mb-3 product">
+          <div class="card">
+            <img class="card-img-top"
+              src="https://product.hstatic.net/1000133495/product/up_web_2_9b197f9fac254dafb1a0432c203a66cc_large.jpg"
+              alt="Card image" style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title">Thắt lưng nam</h4>
+              <i>MS 103</i>
+              <p class="card-text">
+                <i class="sale-off">$50</i> -> <i>$37</i> </p>
+              </p>
+              <p>Description</p>
+
+              <div class="row">
+                <a href="#" class="btn btn-primary buy">Buy</a>
+                <input type="text" name="quantity" value="1" class="col-md-3 offset-md-2">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-3 mb-3 product">
+          <div class="card">
+            <img class="card-img-top" src="https://product.hstatic.net/1000133495/product/up_web_1_large.jpg"
+              alt="Card image" style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title">Thắt lưng nam</h4>
+              <i>MS 104</i>
+              <p class="card-text">
+                <i class="sale-off">$50</i> -> <i>$38</i> </p>
+              </p>
+              <p>Description</p>
+
+              <div class="row">
+                <a href="#" class="btn btn-primary buy">Buy</a>
+                <input type="text" name="quantity" value="1" class="col-md-3 offset-md-2">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-3 mb-3 product">
+          <div class="card">
+            <img class="card-img-top" src="https://product.hstatic.net/1000133495/product/up_web_3_large.jpg"
+              alt="Card image" style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title">Thắt lưng nam</h4>
+              <i>MS 105</i>
+              <p class="card-text">
+                <i class="sale-off">$50</i> -> <i>$39</i> </p>
+              </p>
+              <p>Description</p>
+
+              <div class="row">
+                <a href="#" class="btn btn-primary buy">Buy</a>
+                <input type="text" name="quantity" value="1" class="col-md-3 offset-md-2">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <nav aria-label="Page navigation example ">
+        <ul class="pagination footer__pagination">
+          <li class="page-item footer__pagination-item">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-item footer__pagination-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item footer__pagination-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item footer__pagination-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item footer__pagination-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <hr>
+      <div class="row">
+        <div class="col-sm-3 ">
+          <h5>THÔNG TIN</h5>
+          <p><a href="#" class="footer__bootom">Giới thiệu</a></p>
+          <p><a href="#" class="footer__bootom">Sản phẩm</a></p>
+          <p><a href="#" class="footer__bootom">Tin tức</a></p>
+          <p><a href="#" class="footer__bootom">Tuyển dụng</a></p>
+          <p><a href="#" class="footer__bootom"> Liên hệ</a></p>
+        </div>
+        <div class="col-sm-3 ">
+          <h5>CHĂM SÓC KHÁCH HÀNG</h5>
+          <p><a href="#" class="footer__bootom">Trung Tâm Trợ Giúp</a></p>
+          <p><a href="#" class="footer__bootom">Hướng Dẫn Mua Hàng</a></p>
+          <p><a href="#" class="footer__bootom">Hướng Dẫn Bán Hàng</a></p>
+          <p><a href="#" class="footer__bootom">Thanh Toán</a></p>
+          <p><a href="#" class="footer__bootom"> Vận Chuyển</a></p>
+        </div>
+        <div class="col-sm-3 ">
+          <h5>VỀ MyFasion</h5>
+          <p><a href="#" class="footer__bootom">Chính Sách Bảo Mật</a></p>
+          <p><a href="#" class="footer__bootom">Chính Hãng</a></p>
+          <p><a href="#" class="footer__bootom">Flash Sales</a></p>
+          <p><a href="#" class="footer__bootom">Liên Hệ Với Truyền Thông</a></p>
+          <p><a href="#" class="footer__bootom"> Chính Sách Bảo Hành</a></p>
+        </div>
+        <div class="col-sm-3 ">
+          <h5>THÔNG TIN</h5>
+          <p><a href="#" class="footer__bootom">Giới thiệu</a></p>
+          <p><a href="#" class="footer__bootom">Sản phẩm</a></p>
+          <p><a href="#" class="footer__bootom">Tin tức</a></p>
+          <p><a href="#" class="footer__bootom">Tuyển dụng</a></p>
+          <p><a href="#" class="footer__bootom"> Liên hệ</a></p>
+        </div>
+      </div>
+      <div class="card-footer text-center footer__text">
+        <div class="text-muted ">Copyright 2020 ©</div> MF VIETNAM
+      </div>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">My Order</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Code</th>
+                    <th scope="col">Quantity</th>
+                  </tr>
+                </thead>
+                <tbody class="list-order-product">
+                  <!-- <tr>
+                                    <th colspan="4" class="text-danger">Ban chua co san pham nao</th>
+                                </tr> -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </main>
+</body>
+
+</html>

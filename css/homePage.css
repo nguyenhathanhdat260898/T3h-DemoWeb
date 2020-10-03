@@ -1,0 +1,53 @@
+
+body{
+  background-image: url(https://img2.thuthuatphanmem.vn/uploads/2018/12/30/background-full-hd-dep_110637776.jpg);
+}
+
+.sale-off {
+  text-decoration: line-through;
+}
+
+.my-card {
+  color: white;
+  margin-right: 20px;
+  position: relative;
+}
+
+.card_number {
+  background-color: var(--primary-color);
+  position: absolute;
+  top: -5px;
+  left: 10px;
+  border-radius: 50%;
+  font-size: 0.7em;
+  width: 15px;
+  height: 15px;
+  line-height: 15px;
+  text-align: center;
+}
+
+.my-card {
+  cursor: pointer;
+}
+
+.fixed-top{
+  position: absolute;
+}
+
+.breadcrumb{
+  background-color: transparent;
+}
+
+
+
+.footer__pagination{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.footer__pagination-item{
+  margin-left:2px;
+}
+
+
